@@ -43,8 +43,10 @@ This is faster than the standard rand::thread_rng() approach.
 ### Further optimization is possible by using specialized data structures for ex:(AtomicU32, AtomicU64, spatial hashing, and parallel movement with Rayon.) , but I'm not entirely sure of its feasibility as I never used these things before, I have very little exp. with system programming.
 
 ### Benchmark on MacBook Air M2
+### Benchmark on MacBook Air M2
 
-| Ants (N) | Colonies (C) | Steps (max 10,000)  Total Runtime |
-| -------- | ------------ | ------------------ | -------------|
-| 1000     | 7000         | 10,000             | \~150 ms     |
-| 10       | 30           | 10,000             | \~0.047791 ms|
+| Ants (N) | Colonies (C) | Steps (max 10,000) | Total Runtime   |
+|----------|--------------|--------------------|----------------|
+| 1000     | 7000         | 10,000             | ~150 ms        |
+| 10       | 30           | 10,000             | ~0.047791 ms   |
+
