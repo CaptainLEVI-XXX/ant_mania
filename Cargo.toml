@@ -1,0 +1,12 @@
+[package]
+name = "ant-mania"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+fastrand = "2"
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
